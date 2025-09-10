@@ -4,6 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "./", // ✅ ensures correct paths for production (fixes blank page)
   server: {
     host: "::",
     port: 8080,
